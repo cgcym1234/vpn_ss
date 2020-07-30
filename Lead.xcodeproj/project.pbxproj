@@ -24,13 +24,6 @@
 		253AF91521A0362F005CCC41 /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09549AD31DDF406B000F198C /* CocoaLumberjack.framework */; };
 		253AF91621A0362F005CCC41 /* CocoaLumberjackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09549AD41DDF406B000F198C /* CocoaLumberjackSwift.framework */; };
 		253AF91721A0362F005CCC41 /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09549AD51DDF406B000F198C /* CommonCrypto.framework */; };
-		253AF91921A0362F005CCC41 /* lwip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09549AD61DDF406B000F198C /* lwip.framework */; };
-		253AF91A21A0362F005CCC41 /* MMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09549AD71DDF406B000F198C /* MMDB.framework */; };
-		253AF91B21A0362F005CCC41 /* NEKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09549AD81DDF406B000F198C /* NEKit.framework */; };
-		253AF91C21A0362F005CCC41 /* Resolver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09E3FB5A1DF859E0001DE158 /* Resolver.framework */; };
-		253AF91E21A0362F005CCC41 /* Sodium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09549AD91DDF406B000F198C /* Sodium.framework */; };
-		253AF91F21A0362F005CCC41 /* tun2socks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09549ADA1DDF406B000F198C /* tun2socks.framework */; };
-		253AF92021A0362F005CCC41 /* Yaml.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09549ADB1DDF406B000F198C /* Yaml.framework */; };
 		28153D4E223B4AC90057D5DD /* Main.strings in Resources */ = {isa = PBXBuildFile; fileRef = 28153D24223B4AC90057D5DD /* Main.strings */; };
 		28153D4F223B4AC90057D5DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28153D26223B4AC90057D5DD /* LaunchScreen.storyboard */; };
 		28153D50223B4AC90057D5DD /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28153D29223B4AC90057D5DD /* HomeViewModel.swift */; };
@@ -59,6 +52,13 @@
 		28153D68223B4ACA0057D5DD /* YYBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28153D49223B4AC90057D5DD /* YYBaseViewController.swift */; };
 		28153D69223B4ACA0057D5DD /* YYBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28153D4A223B4AC90057D5DD /* YYBaseNavigationController.swift */; };
 		28153D6A223B4ACA0057D5DD /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28153D4B223B4AC90057D5DD /* App.swift */; };
+		282D6B2624D2AB3800918C01 /* Yaml.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 282D6B1F24D2AB3800918C01 /* Yaml.framework */; };
+		282D6B2824D2AB3800918C01 /* MMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 282D6B2024D2AB3800918C01 /* MMDB.framework */; };
+		282D6B2A24D2AB3800918C01 /* Sodium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 282D6B2124D2AB3800918C01 /* Sodium.framework */; };
+		282D6B2C24D2AB3900918C01 /* tun2socks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 282D6B2224D2AB3800918C01 /* tun2socks.framework */; };
+		282D6B2E24D2AB3900918C01 /* Resolver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 282D6B2324D2AB3800918C01 /* Resolver.framework */; };
+		282D6B3024D2AB3900918C01 /* lwip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 282D6B2424D2AB3800918C01 /* lwip.framework */; };
+		282D6B3224D2AB3900918C01 /* NEKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 282D6B2524D2AB3800918C01 /* NEKit.framework */; };
 		283167B4223412B70043C321 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25BC3D8E219DACEC00F69B39 /* NetworkExtension.framework */; };
 		283167B5223412C00043C321 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25BC3D8E219DACEC00F69B39 /* NetworkExtension.framework */; };
 		285BD72F223B50FF0034DF95 /* Then.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28153D3E223B4AC90057D5DD /* Then.swift */; };
@@ -95,16 +95,6 @@
 			dstSubfolderSpec = 16;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		25BC3D8D219D58E800F69B39 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -157,6 +147,13 @@
 		28153D4B223B4AC90057D5DD /* App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		28153D4C223B4AC90057D5DD /* Lead.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = Lead.entitlements; sourceTree = "<group>"; };
 		28153D4D223B4AC90057D5DD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		282D6B1F24D2AB3800918C01 /* Yaml.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Yaml.framework; path = ../Http/Carthage/Build/iOS/Yaml.framework; sourceTree = "<group>"; };
+		282D6B2024D2AB3800918C01 /* MMDB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MMDB.framework; path = ../Http/Carthage/Build/iOS/MMDB.framework; sourceTree = "<group>"; };
+		282D6B2124D2AB3800918C01 /* Sodium.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sodium.framework; path = ../Http/Carthage/Build/iOS/Sodium.framework; sourceTree = "<group>"; };
+		282D6B2224D2AB3800918C01 /* tun2socks.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = tun2socks.framework; path = ../Http/Carthage/Build/iOS/tun2socks.framework; sourceTree = "<group>"; };
+		282D6B2324D2AB3800918C01 /* Resolver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Resolver.framework; path = ../Http/Carthage/Build/iOS/Resolver.framework; sourceTree = "<group>"; };
+		282D6B2424D2AB3800918C01 /* lwip.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = lwip.framework; path = ../Http/Carthage/Build/iOS/lwip.framework; sourceTree = "<group>"; };
+		282D6B2524D2AB3800918C01 /* NEKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NEKit.framework; path = ../Http/Carthage/Build/iOS/NEKit.framework; sourceTree = "<group>"; };
 		285BD758223BAB2A0034DF95 /* NEKitRule.conf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NEKitRule.conf; sourceTree = "<group>"; };
 		353C0FD81DDF393F00A46EBD /* Lead.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lead.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6271A5D1F8DA371F20ACC6C8 /* Pods_Lead.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lead.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -189,18 +186,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBAA2A9C9F08A662521F032B /* Pods_Lead.framework in Frameworks */,
+				282D6B2624D2AB3800918C01 /* Yaml.framework in Frameworks */,
+				282D6B2824D2AB3800918C01 /* MMDB.framework in Frameworks */,
 				253AF91421A0362F005CCC41 /* CocoaAsyncSocket.framework in Frameworks */,
+				282D6B2A24D2AB3800918C01 /* Sodium.framework in Frameworks */,
 				253AF91521A0362F005CCC41 /* CocoaLumberjack.framework in Frameworks */,
+				282D6B3224D2AB3900918C01 /* NEKit.framework in Frameworks */,
+				282D6B3024D2AB3900918C01 /* lwip.framework in Frameworks */,
 				253AF91621A0362F005CCC41 /* CocoaLumberjackSwift.framework in Frameworks */,
+				282D6B2C24D2AB3900918C01 /* tun2socks.framework in Frameworks */,
 				253AF91721A0362F005CCC41 /* CommonCrypto.framework in Frameworks */,
-				253AF91921A0362F005CCC41 /* lwip.framework in Frameworks */,
-				253AF91A21A0362F005CCC41 /* MMDB.framework in Frameworks */,
-				253AF91B21A0362F005CCC41 /* NEKit.framework in Frameworks */,
-				253AF91C21A0362F005CCC41 /* Resolver.framework in Frameworks */,
-				253AF91E21A0362F005CCC41 /* Sodium.framework in Frameworks */,
-				253AF91F21A0362F005CCC41 /* tun2socks.framework in Frameworks */,
 				283167B5223412C00043C321 /* NetworkExtension.framework in Frameworks */,
-				253AF92021A0362F005CCC41 /* Yaml.framework in Frameworks */,
+				282D6B2E24D2AB3900918C01 /* Resolver.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +225,13 @@
 		09549ACD1DDF3C0E000F198C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				282D6B2424D2AB3800918C01 /* lwip.framework */,
+				282D6B2024D2AB3800918C01 /* MMDB.framework */,
+				282D6B2524D2AB3800918C01 /* NEKit.framework */,
+				282D6B2324D2AB3800918C01 /* Resolver.framework */,
+				282D6B2124D2AB3800918C01 /* Sodium.framework */,
+				282D6B2224D2AB3800918C01 /* tun2socks.framework */,
+				282D6B1F24D2AB3800918C01 /* Yaml.framework */,
 				25BC3D8E219DACEC00F69B39 /* NetworkExtension.framework */,
 				1878A68920C19FA500CD4875 /* MessageUI.framework */,
 				09E3FB5A1DF859E0001DE158 /* Resolver.framework */,
@@ -409,7 +413,6 @@
 				353C0FD61DDF393F00A46EBD /* Resources */,
 				091B62221EDA7F3100FA4D92 /* ShellScript */,
 				09549ACC1DDF3B4A000F198C /* Embed App Extensions */,
-				25BC3D8D219D58E800F69B39 /* Embed Frameworks */,
 				4299C2F513C38B0558BE65AD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
@@ -559,34 +562,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Lead/Pods-Lead-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
-				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
-				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
-				"${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftDate/SwiftDate.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-Lead/Pods-Lead-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reusable.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftDate.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-Lead/Pods-Lead-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -698,7 +678,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -731,7 +711,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -875,7 +855,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -906,7 +886,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jiedian.vpn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
