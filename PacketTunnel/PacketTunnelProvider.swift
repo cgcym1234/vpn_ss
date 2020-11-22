@@ -9,6 +9,7 @@ import NetworkExtension
 import NEKit
 import CocoaLumberjackSwift
 import Yaml
+import os.log
 
 class PacketTunnelProvider: NEPacketTunnelProvider {
     
@@ -24,6 +25,7 @@ class PacketTunnelProvider: NEPacketTunnelProvider {
     var started:Bool = false
 
 	override func startTunnel(options: [String : NSObject]?, completionHandler: @escaping (Error?) -> Void) {
+        os_log("STARTING TUNNEL!!!!")
         DDLog.removeAllLoggers()
         DDLog.add(DDOSLogger.sharedInstance, with: DDLogLevel.info)
         ObserverFactory.currentFactory = DebugObserverFactory()

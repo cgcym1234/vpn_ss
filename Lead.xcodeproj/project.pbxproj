@@ -61,6 +61,9 @@
 		282D6B3224D2AB3900918C01 /* NEKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 282D6B2524D2AB3800918C01 /* NEKit.framework */; };
 		283167B4223412B70043C321 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25BC3D8E219DACEC00F69B39 /* NetworkExtension.framework */; };
 		283167B5223412C00043C321 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25BC3D8E219DACEC00F69B39 /* NetworkExtension.framework */; };
+		2858D9FC24EA97B800BC5AA3 /* udp_server.c in Sources */ = {isa = PBXBuildFile; fileRef = 2858D9F724EA97B800BC5AA3 /* udp_server.c */; };
+		2858D9FD24EA97B800BC5AA3 /* Server.m in Sources */ = {isa = PBXBuildFile; fileRef = 2858D9F824EA97B800BC5AA3 /* Server.m */; };
+		2858D9FE24EA97B800BC5AA3 /* udp_client.c in Sources */ = {isa = PBXBuildFile; fileRef = 2858D9F924EA97B800BC5AA3 /* udp_client.c */; };
 		285BD72F223B50FF0034DF95 /* Then.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28153D3E223B4AC90057D5DD /* Then.swift */; };
 		285BD759223BAB2A0034DF95 /* NEKitRule.conf in Resources */ = {isa = PBXBuildFile; fileRef = 285BD758223BAB2A0034DF95 /* NEKitRule.conf */; };
 		DBAA2A9C9F08A662521F032B /* Pods_Lead.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6271A5D1F8DA371F20ACC6C8 /* Pods_Lead.framework */; };
@@ -154,6 +157,12 @@
 		282D6B2324D2AB3800918C01 /* Resolver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Resolver.framework; path = ../Http/Carthage/Build/iOS/Resolver.framework; sourceTree = "<group>"; };
 		282D6B2424D2AB3800918C01 /* lwip.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = lwip.framework; path = ../Http/Carthage/Build/iOS/lwip.framework; sourceTree = "<group>"; };
 		282D6B2524D2AB3800918C01 /* NEKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NEKit.framework; path = ../Http/Carthage/Build/iOS/NEKit.framework; sourceTree = "<group>"; };
+		2858D9F624EA97B800BC5AA3 /* udp_client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = udp_client.h; sourceTree = "<group>"; };
+		2858D9F724EA97B800BC5AA3 /* udp_server.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = udp_server.c; sourceTree = "<group>"; };
+		2858D9F824EA97B800BC5AA3 /* Server.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Server.m; sourceTree = "<group>"; };
+		2858D9F924EA97B800BC5AA3 /* udp_client.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = udp_client.c; sourceTree = "<group>"; };
+		2858D9FA24EA97B800BC5AA3 /* Server.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Server.h; sourceTree = "<group>"; };
+		2858D9FB24EA97B800BC5AA3 /* udp_server.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = udp_server.h; sourceTree = "<group>"; };
 		285BD758223BAB2A0034DF95 /* NEKitRule.conf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NEKitRule.conf; sourceTree = "<group>"; };
 		353C0FD81DDF393F00A46EBD /* Lead.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lead.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6271A5D1F8DA371F20ACC6C8 /* Pods_Lead.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lead.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -208,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				09549AC31DDF3B4A000F198C /* PacketTunnelProvider.swift */,
+				2858D9F524EA97B800BC5AA3 /* Server */,
 				09549AC11DDF3B4A000F198C /* Supporting Files */,
 			);
 			path = PacketTunnel;
@@ -359,6 +369,19 @@
 				28153D4A223B4AC90057D5DD /* YYBaseNavigationController.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		2858D9F524EA97B800BC5AA3 /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				2858D9F624EA97B800BC5AA3 /* udp_client.h */,
+				2858D9F724EA97B800BC5AA3 /* udp_server.c */,
+				2858D9F824EA97B800BC5AA3 /* Server.m */,
+				2858D9F924EA97B800BC5AA3 /* udp_client.c */,
+				2858D9FA24EA97B800BC5AA3 /* Server.h */,
+				2858D9FB24EA97B800BC5AA3 /* udp_server.h */,
+			);
+			path = Server;
 			sourceTree = "<group>";
 		};
 		353C0FCF1DDF393F00A46EBD = {
@@ -593,7 +616,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2858D9FC24EA97B800BC5AA3 /* udp_server.c in Sources */,
 				285BD72F223B50FF0034DF95 /* Then.swift in Sources */,
+				2858D9FE24EA97B800BC5AA3 /* udp_client.c in Sources */,
+				2858D9FD24EA97B800BC5AA3 /* Server.m in Sources */,
 				09549AC41DDF3B4A000F198C /* PacketTunnelProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

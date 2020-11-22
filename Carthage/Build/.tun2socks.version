@@ -3,11 +3,11 @@
   "iOS" : [
     {
       "name" : "tun2socks",
-      "hash" : "19922662376d5c5a8977afc55d7a8ced9038677db2a38136d35982f238b7e14f"
+      "hash" : "08a53232412b591bf0d6d6912a6f313d52d7f3c2f5f00b68cb4848886f29e314"
     },
     {
       "name" : "lwip",
-      "hash" : "ec3ce86f0657c81f1e02c0aecf24cefc87933961bc3f3cb04f6aea1ff518e6ec"
+      "hash" : "153de3d8e8e6d254796c893a8e2f88ede9f4fca43b4e230cb26c2d824c653d36"
     }
   ]
 }
